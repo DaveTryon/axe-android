@@ -116,6 +116,26 @@ public class ColorContrastTests {
   }
 
   @Test
+  public void imageTest_antialiasingBug_937_Succeeds() {
+    new ImageResourceResult(
+            "antialiasing_bug.png",
+            new AxeColor(255,255,255,255),
+            new AxeColor(255,0,0,0),
+            ColorContrastRunner.Confidence.HIGH
+    ).runTest(new AxeRect(42, 745, 826, 937));
+  }
+
+  @Test
+  public void imageTest_antialiasingBug_938_Fails() {
+    new ImageResourceResult(
+            "antialiasing_bug.png",
+            new AxeColor(255,255,255,255),
+            new AxeColor(255,0,0,0),
+            ColorContrastRunner.Confidence.HIGH
+    ).runTest(new AxeRect(42, 745, 826, 938));
+  }
+
+  @Test
   public void example_Inaccessible() {
     new ImageResourceResult(
         "color_contrast_example.png",
