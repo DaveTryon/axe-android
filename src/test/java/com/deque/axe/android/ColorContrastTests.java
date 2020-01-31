@@ -116,13 +116,83 @@ public class ColorContrastTests {
   }
 
   @Test
-  public void imageTest_textOverlaysImage() {
+  public void imageTest_textOverlay_1() {
     new ImageResourceResult(
-            "text_overlays_image.png",
+            "text_overlay_1.png",
             null,
             null,
             ColorContrastRunner.Confidence.NONE
-    ).runTest(new AxeRect(62, 1017, 1488, 1602));
+    ).runTest();
+  }
+
+  @Test
+  public void imageTest_textOverlay_2() {
+    new ImageResourceResult(
+            "text_overlay_2.png",
+            null,
+            null,
+            ColorContrastRunner.Confidence.NONE
+    ).runTest();
+  }
+
+  @Test
+  public void imageTest_textOverlay_3() {
+    new ImageResourceResult(
+            "text_overlay_3.png",
+            null,
+            null,
+            ColorContrastRunner.Confidence.NONE
+    ).runTest();
+  }
+
+  @Test
+  public void imageTest_textOverlay_4() {
+    new ImageResourceResult(
+            "text_overlay_4.png",
+            null,
+            null,
+            ColorContrastRunner.Confidence.NONE
+    ).runTest();
+  }
+
+  @Test
+  public void imageTest_textOverlay_5() {
+    new ImageResourceResult(
+            "text_overlay_5.png",
+            null,
+            null,
+            ColorContrastRunner.Confidence.NONE
+    ).runTest();
+  }
+
+  @Test
+  public void imageTest_textOverlay_6() {
+    new ImageResourceResult(
+            "text_overlay_6.png",
+            null,
+            null,
+            ColorContrastRunner.Confidence.NONE
+    ).runTest();
+  }
+
+  @Test
+  public void imageTest_textOverlay_7() {
+    new ImageResourceResult(
+            "text_overlay_7.png",
+            null,
+            null,
+            ColorContrastRunner.Confidence.NONE
+    ).runTest();
+  }
+
+  @Test
+  public void imageTest_textOverlay_8() {
+    new ImageResourceResult(
+            "text_overlay_8.png",
+            null,
+            null,
+            ColorContrastRunner.Confidence.NONE
+    ).runTest();
   }
 
   @Test
